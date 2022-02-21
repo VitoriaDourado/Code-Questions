@@ -1,0 +1,160 @@
+package aula21;
+
+import java.util.Scanner;
+
+public class questões {
+	
+	 public static Scanner ler = new Scanner(System.in);
+		public static void main(String[] args) {
+		    
+			int pontosUm, pontosDois, pontosTres, pontosQuatro, pontosCinco, pontosSeis, pontosSete, pontosOito, pontosNove, pontosDez;
+			
+			System.out.println("------TESTE DE PERGUNTAS-----");
+			System.out.println("----------------------------------------------------------------------------------------------------");
+			System.out.println("Responda a essas perguntas e veja o total de pontos alcançados");
+			System.out.println("                                                               ");
+			System.out.println("1) Qual é a diferença entre um 'fork' e um 'branch'?");
+			System.out.println("                                                                                                     ");
+			System.out.println("No Git, um fork é uma cópia de um repositório que é completamente separado do original . Uma branch, no entanto, é algo que é usado para alterar certas partes de um programa (do lado do desenvolvimento) e depois mesclar as alterações com no repositório.");
+			System.out.println("Essa alternativa é verdadeira ou falsa?");
+			System.out.println("[1] Verdadeira ");
+			System.out.println("[2] Falsa ");
+			int respostaUm = ler.nextInt();
+			
+			if(respostaUm == 1) {
+				 pontosUm = 1;
+			}else {
+				 pontosUm = 0;
+			}
+			
+			System.out.println("2) Como baixa um projeto e seu histórico de versão inteiro no git? ");
+			System.out.println("[1] git init");
+			System.out.println("[2] git reset");
+			System.out.println("[3] git clone");
+			System.out.println("[4] git commit -m");
+			int respostaDois = ler.nextInt();
+			
+			if(respostaDois == 3) {
+				pontosDois = 1;
+			}else {
+				pontosDois = 0;
+			}
+			
+			System.out.println("3) Para que serve o git add ?");
+			System.out.println("[1] É usado para publicar todos os seus commits para o github.");
+			System.out.println("[2] Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX, que funciona como uma área do git no qual os arquivos possam ser enviados ao Github. ");
+			System.out.println("[3] Este comando realiza o que chamamos de “commit”, que significa pegar todos os arquivos que estão naquele lugar INDEX e criar uma revisão com um número e um comentário, que será vista por todos.");
+			System.out.println("[4] Exibe o status do seu repositório atual");
+			int respostaTres = ler.nextInt();
+			
+			if(respostaTres == 2) {
+				pontosTres = 1;
+			}else {
+				pontosTres = 0;
+			}
+			
+			System.out.println("4) O Git é um sistema de controle de versão distribuído gratuitamente e de código aberto projetado usado, principalmente, no desenvolvimento de software. Sobre o Git o que é correto afirmar?");
+			System.out.println("[1] O Git não suporta commits em vários branches.");
+			System.out.println("[2] O comando git stash retorna o repositório ao HEAD.");
+			System.out.println("[3] O comando git checkout é utilizado para desfazer alterações, mesmo que o arquivo tenha sido adicionado na staged area.");
+			System.out.println("[4] Use git merge quando quiser gravar o estado atual do diretório de trabalho e do índice, mas quiser voltar para um diretório de trabalho limpo.");
+			System.out.println("[5] O comando git add armazena o conteúdo atual do índice em um novo commit junto com uma mensagem de log do usuário descrevendo as alterações.");
+			int respostaQuatro = ler.nextInt();
+			
+			if(respostaQuatro == 1) {
+				pontosQuatro = 1;
+			}else {
+				pontosQuatro = 0;
+			}
+			
+			System.out.println("5) O GitHub é um servidor para repositório e versionamento de software que utiliza a plataforma Git.");
+			System.out.println("Essa afirmação é verdadeira ou falsa?");
+			System.out.println("[1] Verdadeiro");
+			System.out.println("[2] Falso");
+			int respostaCinco = ler.nextInt();
+			
+			if(respostaCinco == 1) {
+				pontosCinco = 1;
+			}else {
+				pontosCinco = 0;
+			}
+			
+			System.out.println("6) Diferente de outros sistemas de controle de versão, o Git possui uma área intermediária na qual o commit pode ser formatado e revisto chamada:");
+			System.out.println("[1] verify area.");
+			System.out.println("[2] staging area.");
+			System.out.println("[3] commit area.");
+			System.out.println("[4] revision area.");
+			System.out.println("[5] matrix area.");
+			int respostaSeis = ler.nextInt();
+			
+			if(respostaSeis == 2) {
+				pontosSeis= 1;
+			}else {
+				pontosSeis = 0;
+			}
+			
+			System.out.println("7) Qual comando deve ser executado, em um repositório Git, através do terminal, para criar um branch chamado ufrpe e colocá-lo como ativo?");
+			System.out.println("[1] git checkout ufrpe");
+			System.out.println("[2] git branch -d ufrpe");
+			System.out.println("[3] git checkout -b ufrpe");
+			System.out.println("[4] git pull ufrpe");
+			System.out.println("[5] git push ufrpe");
+			int respostaSete = ler.nextInt();
+			
+			if(respostaSete == 3) {
+				pontosSete = 1;
+			}else {
+				pontosSete = 0;
+			}
+			
+			System.out.println("8) Assinale o comando que deve ser executado, em um repositório Git, através do terminal, para criar um branch chamado ufrj e colocá-lo como ativo.");
+			System.out.println("[1] git checkout ufrj");
+			System.out.println("[2] git branch -d ufrj");
+			System.out.println("[3] git checkout -b ufrj");
+			System.out.println("[4] git pull ufrj");
+			int respostaOito = ler.nextInt();
+			
+			if(respostaOito == 3) {
+				pontosOito = 1;
+			}else {
+				pontosOito = 0;
+			}
+			
+			System.out.println("9) O Git é um sistema de controle de versão distribuído, gratuito e de código aberto. Sobre esse sistema, o comando que incorpora mudanças (busca e integra) de um repositório remoto no branch atual é o");
+			System.out.println("[1] git add");
+			System.out.println("[2] git pull");
+			System.out.println("[3] git push");
+			System.out.println("[4] git fetch");
+			System.out.println("[5] git merge");
+			int respostaNove = ler.nextInt();
+			
+			if(respostaNove == 3) {
+				pontosNove = 1;
+			}else {
+				pontosNove = 0;
+			}
+			
+			System.out.println("10) Jaqueline é uma analista que planeja utilizar Git e Gitflow em seu projeto. Assinale a alternativa que apresenta uma prática inconsistente com esse processo.");
+			System.out.println("[1] Realizar um commit na branch develop");
+			System.out.println("[2] Criar um Pull Request para a branch develop");
+			System.out.println("[3] Criar uma feature branch");
+			System.out.println("[4] Criar uma hotfix branch");
+			System.out.println("[5] Criar uma release branch");
+			int respostaDez = ler.nextInt();
+			
+			if(respostaDez == 1) {
+				pontosDez = 1;
+			}else {
+				pontosDez = 0;
+			}
+			
+			int pontosTotal = pontosUm + pontosDois + pontosTres + pontosQuatro + pontosCinco + pontosSeis + pontosSete + pontosOito + pontosNove + pontosDez;
+			System.out.println("Sua pontuação foi: " + pontosTotal);
+			 
+			if(pontosTotal >= 7) {
+				System.out.println("Parabéns, você passou.");
+			}else {
+				System.out.println("Que pena! Você não atingiu a pontuação necessária, estude mais.");
+			}
+		}
+}
